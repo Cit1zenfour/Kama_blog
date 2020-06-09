@@ -25,8 +25,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'egjmz6+i)6_cwrma77!(d)17)p7dr2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-#DEBUG = False
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -122,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'firstBlog/static')
 ]
 
